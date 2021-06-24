@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 06, 2021 at 05:28 PM
--- Server version: 5.7.24
--- PHP Version: 7.3.2
+-- Generation Time: Jun 24, 2021 at 04:44 PM
+-- Server version: 5.7.33
+-- PHP Version: 7.4.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_sewakos`
+-- Database: `sewakos`
 --
 
 -- --------------------------------------------------------
@@ -61,11 +60,11 @@ CREATE TABLE `hunian` (
 --
 
 INSERT INTO `hunian` (`id_hunian`, `nama_hunian`, `jenis_hunian`, `deskripsi_hunian`, `status_hunian`, `harga_hunian`, `gambar`) VALUES
-(14, 'Kontrakan coklat A01', 'Kontrakan', '2 Kamar tidur, 1 dapur, 1 kamar mandi, 1 ruang tamu, tempat parkiran', 'Available', 1000000, '1511009066.jpg'),
-(16, 'Kontrakan coklat A02', 'Kontrakan', '2 Kamar tidur, 1 dapur, 1 kamar mandi, 1 ruang tamu, tempat parkiran, ', 'Sold out', 1000000, '1511009330.jpg'),
+(14, 'Kontrakan coklat A01', 'Kontrakan', '2 Kamar tidur, 1 dapur, 1 kamar mandi, 1 ruang tamu, tempat parkiran', 'Available', 1000000, '1624364180.jpg'),
+(16, 'Kontrakan coklat A02', 'Kontrakan', '2 Kamar tidur, 1 dapur, 1 kamar mandi, 1 ruang tamu, tempat parkiran, ', 'Sold out', 1000000, '1624364265.jpg'),
 (17, 'Kontrakan abu-abu B01', 'Kontrakan', '2 Kamar tidur lengkap dengan kasur, 1 dapur, 1 kamar mandi, 1 ruang tamu', 'Sold Out', 1250000, '1511009552.jpg'),
-(18, 'Kontrakan abu-abu B02', 'Kontrakan', '2 Kamar tidur  + AC, 1 dapur, 1 kamar mandi, 1 ruang tamu', 'Available', 1500000, '1511009651.jpg'),
-(19, 'Kontrakan abu-abu C01', 'Kontrakan', '2 Kamar tidur, 1 dapur, 1 kamar mandi, 1 ruang tamu', 'Sold Out', 1300000, '1511009877.jpg'),
+(18, 'Kontrakan abu-abu B02', 'Kontrakan', '2 Kamar tidur  + AC, 1 dapur, 1 kamar mandi, 1 ruang tamu', 'Available', 1500000, '1624364490.jpg'),
+(19, 'Kontrakan abu-abu C01', 'Kontrakan', '2 Kamar tidur, 1 dapur, 1 kamar mandi, 1 ruang tamu', 'Sold Out', 1300000, '1624364458.jpg'),
 (20, 'Kontrakan abu-abu C02', 'Kontrakan', '2 Kamar tidur + AC, 1 dapur, 1 kamar mandi, 1 ruang tamu', 'Available', 1500000, '1511009941.jpg');
 
 -- --------------------------------------------------------
@@ -111,7 +110,8 @@ CREATE TABLE `member` (
 
 INSERT INTO `member` (`id_member`, `nama_member`, `pass_member`, `email_member`, `status`, `nohp`, `alamat_member`) VALUES
 (11, 'Fanky Lidya', '12345', 'lidya@webmail.umm.ac.id', 'Mahasiswa', '081285639975', 'Pasuruan'),
-(12, 'Wafi junjung', '11111', 'wafi@webmail.umm.ac.id', 'Mahasiswa', '081219876654', 'Tuban');
+(12, 'Wafi junjung', '11111', 'wafi@webmail.umm.ac.id', 'Mahasiswa', '081219876654', 'Tuban'),
+(13, '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -227,7 +227,7 @@ ALTER TABLE `komplain`
 -- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
-  MODIFY `id_member` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_member` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `pesan`
